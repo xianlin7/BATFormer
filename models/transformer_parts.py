@@ -113,7 +113,7 @@ class TransformerDown(nn.Module):
         self.pos_embedding = nn.Parameter(torch.randn(1, num_patches, self.dmodel))
         self.dropout = nn.Dropout(emb_dropout)
 
-        self.transformer = Transformer_prune(self.dmodel, depth, heads, dim_head, self.mlp_dim, dropout, num_patches)
+        self.transformer = Transformer(self.dmodel, depth, heads, dim_head, self.mlp_dim, dropout, num_patches)
 
         self.recover_patch_embedding = nn.Sequential(
             Rearrange('b (h w) c -> b c h w', h=image_height//patch_height),
