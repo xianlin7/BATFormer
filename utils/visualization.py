@@ -9,15 +9,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def featuremap_visual(feature,
-                      out_dir='./utils/visualization',  # 特征图保存路径文件
-                      save_feature=True,  # 是否以图片形式保存特征图
-                      show_feature=True,  # 是否使用plt显示特征图
-                      feature_title=None,  # 特征图名字，默认以shape作为title
+                      out_dir='./utils/visualization',  
+                      save_feature=True,  
+                      show_feature=True,  
+                      feature_title=None,  
                       channel = None,
-                      num_ch=-1,  # 显示特征图前几个通道，-1 or None 都显示
-                      nrow=1,  # 每行显示多少个特征图通道
-                      padding=10,  # 特征图之间间隔多少像素值
-                      pad_value=1  # 特征图之间的间隔像素
+                      num_ch=-1,  
+                      nrow=1,  
+                      padding=10,  
+                      pad_value=1  
                       ):
 
     # feature = feature.detach().cpu()
@@ -93,15 +93,15 @@ def attentionmap_visual(features,
 
 
 def featuremap1d_visual(feature,
-                      out_dir='./utils/visualization',  # 特征图保存路径文件
-                      save_feature=True,  # 是否以图片形式保存特征图
-                      show_feature=True,  # 是否使用plt显示特征图
-                      feature_title=None,  # 特征图名字，默认以shape作为title
+                      out_dir='./utils/visualization', 
+                      save_feature=True, 
+                      show_feature=True,  
+                      feature_title=None,  
                       channel = None,
-                      num_ch=-1,  # 显示特征图前几个通道，-1 or None 都显示
-                      nrow=1,  # 每行显示多少个特征图通道
-                      padding=10,  # 特征图之间间隔多少像素值
-                      pad_value=1  # 特征图之间的间隔像素
+                      num_ch=-1,  
+                      nrow=1,  
+                      padding=10,  
+                      pad_value=1  
                       ):
 
     # feature = feature.detach().cpu()
@@ -150,10 +150,10 @@ global layer
 layer = 0
 
 def attentionheatmap_visual(features,
-                      out_dir='./VisualizationP/heatmap/',  # 特征图保存路径文件
-                      save_feature=True,  # 是否以图片形式保存特征图
-                      show_feature=True,  # 是否使用plt显示特征图
-                      feature_title=None,  # 特征图名字，默认以shape作为title
+                      out_dir='./VisualizationP/heatmap/',  
+                      save_feature=True,  
+                      show_feature=True,  
+                      feature_title=None,  
                       channel = None,
                       ):
 
