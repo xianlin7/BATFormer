@@ -1,6 +1,6 @@
 # C2FTrans
 This repo is the official implementation for:\
-C2FTrans: Coarse-to-Fine Transformers for Medical Image Segmentation.\
+[C2FTrans: Coarse-to-Fine Transformers for Medical Image Segmentation.](https://arxiv.org/pdf/2206.14409.pdf)\
 (The details of our C2FTrans can be found at the models directory in this repo or in the paper.)
 
 ## Requirements
