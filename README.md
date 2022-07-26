@@ -10,9 +10,8 @@ This repo is the official implementation for:\
 * more details please see the requirements.txt
 
 ## Datasets
-* The ISIC 2018 dataset could be acquired from [here](https://challenge.isic-archive.com/data/)
 * The ACDC dataset could be acquired from [here](https://www.creatis.insa-lyon.fr/Challenge/acdc/)
-* The GlaS dataset could be acquired from [here](https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/)
+* The ISIC 2018 dataset could be acquired from [here](https://challenge.isic-archive.com/data/)
 
 ## Training
 Commands for training
