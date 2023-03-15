@@ -228,7 +228,7 @@ for epoch in range(args.epochs):
             save_path = './checkpoints/' + args.modelname + '_%s' % timestr + '_' + str(best_dice)
             torch.save(model.state_dict(), save_path + ".pth", _use_new_zipfile_serialization=False)
     else:
-        flag = np.zeros(200)  # record the patients
+        flag = np.zeros(2000)  # record the patients
         for batch_idx, (X_batch, mask, mask1, mask2, mask3, *rest) in enumerate(valloader):
             if isinstance(rest[0][0], str):
                 image_filename = rest[0][0]
@@ -258,7 +258,7 @@ for epoch in range(args.epochs):
             pred = y_out.detach().cpu().numpy()  # (b, c,h, w) tep
             seg = np.argmax(pred, axis=1)  # (b, h, w) whether exist same score?
 
-            patientid = int(image_filename[:3])
+            patientid = int(image_filename[:4])
             if flag[patientid] == 0:
                 if np.sum(flag) > 0:  # compute the former result
                     b, s, h, w = seg_patient.shape
