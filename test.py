@@ -231,7 +231,7 @@ if eval_mode == "slice":
     print(accs/ (args.classes - 1), fs / (args.classes - 1), ps / (args.classes - 1), rs / (args.classes - 1))
     print(times)
 else:
-    flag = np.zeros(300)
+    flag = np.zeros(2000)
     times = 0
     mdices, mhds = np.zeros(args.classes), np.zeros(args.classes)
     mses, msps, mious = np.zeros(args.classes), np.zeros(args.classes), np.zeros(args.classes)
@@ -264,7 +264,7 @@ else:
         pred = y_out.detach().cpu().numpy()  # (b, c,h, w) tep
         seg = np.argmax(pred, axis=1)  # (b, h, w) whether exist same score?
 
-        patientid = int(image_filename[:3])
+        patientid = int(image_filename[:4])
         if flag[patientid] == 0:
             if np.sum(flag) > 0:  # compute the former result
                 b, s, h, w = seg_patient.shape
