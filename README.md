@@ -11,7 +11,7 @@ This repo is the official implementation for:\
 
 ## Datasets
 * The ACDC dataset could be acquired from [here](https://www.creatis.insa-lyon.fr/Challenge/acdc/). The slice-level ACDC dataset preprocessed by as can be downloaded from [here](https://drive.google.com/file/d/18W_d8ho0Tl7TgPQXczOXZK5OUxtYkQdc/view?usp=share_link).
-* The ISIC 2018 dataset could be acquired from [here](https://challenge.isic-archive.com/data/)\
+* The ISIC 2018 dataset could be acquired from [here](https://challenge.isic-archive.com/data/).
 (The dataset partitioning of ACDC follows [TransUNet](https://github.com/Beckschen/TransUNet) and the ISIC 2018 is divided randomly.)
 
 ## Training
