@@ -26,7 +26,7 @@ class C2FTrans(nn.Module):
         self.softmax = nn.Softmax(dim=1)
 
         for p in self.parameters():
-            p.requires_grad = False
+            p.requires_grad = True # set "True" manually in the first 350 epochs, then load the best model and set "False" manually in the following 50 epochs.
 
         self.trans_local2 = local_block(128 // self.scale // factor, 128 // self.scale // factor * 2, imgsize // 2, 1, heads=6, patch_size=1, n_classes=n_classes, win_size=16)
         self.trans_global = global_block(256 // factor // self.scale, 256 // factor // self.scale * 2, imgsize // 4, 1, heads=4, patch_size=1)
