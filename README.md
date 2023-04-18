@@ -1,6 +1,6 @@
 # BATFormer
 This repo is the official implementation for:\
-[BATFormer: Towards Boundary-Aware Lightweight Transformer for Efficient Medical Image Segmentation.]\
+[BATFormer: Towards Boundary-Aware Lightweight Transformer for Efficient Medical Image Segmentation.](https://ieeexplore.ieee.org/abstract/document/10101800)\
 (The details of our BATFormer can be found at the models directory in this repo or in the paper.)
 
 ## Requirements
